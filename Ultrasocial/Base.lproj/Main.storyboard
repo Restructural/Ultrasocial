@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-EU-Qtt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-EU-Qtt" customClass="StyleView" customModule="Ultrasocial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ultrasocial (6)" translatesAutoresizingMaskIntoConstraints="NO" id="8G4-jJ-OFR">
@@ -43,7 +43,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIS-cr-GyA">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-Ah-Ml0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are new, an account will be created." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-Ah-Ml0">
                                         <rect key="frame" x="8" y="5" width="304" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ynv-LL-DZa"/>
@@ -62,7 +62,7 @@
                                     <constraint firstItem="lbc-Ah-Ml0" firstAttribute="leading" secondItem="zIS-cr-GyA" secondAttribute="leadingMargin" id="j9f-DC-Qdz"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Facebook." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kev-Bz-oXw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kev-Bz-oXw">
                                 <rect key="frame" x="16" y="58" width="288" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Don-g4-8R6"/>
@@ -71,16 +71,16 @@
                                 <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG0-O0-tU1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG0-O0-tU1" customClass="StyleButton" customModule="Ultrasocial" customModuleProvider="target">
                                 <rect key="frame" x="110" y="108" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.33946713805198669" green="0.4847017228603363" blue="0.74516558647155762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.3411764705882353" green="0.4847017228603363" blue="0.74516558647155762" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="9N3-sV-Fqc"/>
                                     <constraint firstAttribute="width" constant="100" id="j2c-az-6p3"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Email." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-Ot-aDd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-Ot-aDd">
                                 <rect key="frame" x="16" y="250" width="288" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Q7S-LN-gWQ"/>
@@ -92,38 +92,38 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Prs-vP-cVQ">
                                 <rect key="frame" x="16" y="300" width="288" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-pB-myE">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-pB-myE" customClass="StyleField" customModule="Ultrasocial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tZw-Vm-Odp"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoA-s9-pJX">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoA-s9-pJX" customClass="StyleField" customModule="Ultrasocial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="288" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="rtd-sl-Nmf"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-Ik-nw7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-Ik-nw7" customClass="StyleActionButton" customModule="Ultrasocial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="288" height="50"/>
                                         <color key="backgroundColor" red="0.47450980392156861" green="0.33333333333333331" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="QIo-yS-g3g"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                        <state key="normal" title="Sign In.">
+                                        <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view alpha="0.12" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9s-9k-nih">
+                            <view alpha="0.12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9s-9k-nih">
                                 <rect key="frame" x="16" y="233" width="288" height="2"/>
                                 <color key="backgroundColor" red="0.47450980390000003" green="0.33333333329999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -131,11 +131,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.38529077979999998" green="0.4384963315" blue="0.51579078199999995" alpha="0.13" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.81176470588235294" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Kev-Bz-oXw" firstAttribute="top" secondItem="N4S-EU-Qtt" secondAttribute="bottom" constant="8" id="41v-ji-bLO"/>
                             <constraint firstItem="lXi-Ot-aDd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5Bq-4R-uDT"/>
                             <constraint firstItem="lXi-Ot-aDd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="68P-nu-kkm"/>
+                            <constraint firstItem="n9s-9k-nih" firstAttribute="trailing" secondItem="lXi-Ot-aDd" secondAttribute="trailing" id="8E4-RA-ALB"/>
                             <constraint firstAttribute="trailing" secondItem="N4S-EU-Qtt" secondAttribute="trailing" id="AqT-Wp-Mft"/>
                             <constraint firstItem="lXi-Ot-aDd" firstAttribute="top" secondItem="n9s-9k-nih" secondAttribute="bottom" constant="15" id="S0T-XL-0nO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zIS-cr-GyA" secondAttribute="bottom" id="Tyy-tF-9rP"/>
@@ -148,6 +149,7 @@
                             <constraint firstItem="Prs-vP-cVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rBS-ta-qoU"/>
                             <constraint firstItem="N4S-EU-Qtt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sLp-K4-urP"/>
                             <constraint firstItem="JG0-O0-tU1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="too-KW-qAb"/>
+                            <constraint firstItem="n9s-9k-nih" firstAttribute="leading" secondItem="lXi-Ot-aDd" secondAttribute="leading" id="uCA-sM-qNK"/>
                             <constraint firstItem="N4S-EU-Qtt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uFX-0N-N34"/>
                             <constraint firstItem="zIS-cr-GyA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xh4-PU-j9B"/>
                             <constraint firstItem="JG0-O0-tU1" firstAttribute="top" secondItem="Kev-Bz-oXw" secondAttribute="bottom" constant="10" id="yMZ-dj-fZ0"/>
