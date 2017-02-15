@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F00251F96075B5C54939E4 /* Pods_Ultrasocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE06CBD37ED3CC344C51A3B8 /* Pods_Ultrasocial.framework */; };
 		818BFFAC1E54675E00CFEA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818BFFAB1E54675E00CFEA24 /* AppDelegate.swift */; };
-		818BFFAE1E54675E00CFEA24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818BFFAD1E54675E00CFEA24 /* ViewController.swift */; };
+		818BFFAE1E54675E00CFEA24 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818BFFAD1E54675E00CFEA24 /* SignInVC.swift */; };
 		818BFFB11E54675E00CFEA24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818BFFAF1E54675E00CFEA24 /* Main.storyboard */; };
 		818BFFB31E54675E00CFEA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818BFFB21E54675E00CFEA24 /* Assets.xcassets */; };
 		818BFFB61E54675E00CFEA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818BFFB41E54675E00CFEA24 /* LaunchScreen.storyboard */; };
+		818BFFBE1E54680B00CFEA24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 818BFFBD1E54680B00CFEA24 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63349CA3D9D2F705D467863A /* Pods-Ultrasocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultrasocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ultrasocial/Pods-Ultrasocial.release.xcconfig"; sourceTree = "<group>"; };
+		7C56F770DCD338E3136D19D4 /* Pods-Ultrasocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultrasocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ultrasocial/Pods-Ultrasocial.debug.xcconfig"; sourceTree = "<group>"; };
 		818BFFA81E54675E00CFEA24 /* Ultrasocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ultrasocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818BFFAB1E54675E00CFEA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		818BFFAD1E54675E00CFEA24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		818BFFAD1E54675E00CFEA24 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		818BFFB01E54675E00CFEA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818BFFB21E54675E00CFEA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818BFFB51E54675E00CFEA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818BFFB71E54675E00CFEA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818BFFBD1E54680B00CFEA24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE06CBD37ED3CC344C51A3B8 /* Pods_Ultrasocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ultrasocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F00251F96075B5C54939E4 /* Pods_Ultrasocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				818BFFAA1E54675E00CFEA24 /* Ultrasocial */,
 				818BFFA91E54675E00CFEA24 /* Products */,
+				83B55C4945486F3F940C8EA1 /* Pods */,
+				D6BF48D4EDF64A09BFA2FB29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		818BFFAA1E54675E00CFEA24 /* Ultrasocial */ = {
 			isa = PBXGroup;
 			children = (
+				818BFFBF1E546B9A00CFEA24 /* Model */,
+				818BFFC11E546BA500CFEA24 /* Controller */,
+				818BFFC01E546BA000CFEA24 /* View */,
 				818BFFAB1E54675E00CFEA24 /* AppDelegate.swift */,
-				818BFFAD1E54675E00CFEA24 /* ViewController.swift */,
 				818BFFAF1E54675E00CFEA24 /* Main.storyboard */,
 				818BFFB21E54675E00CFEA24 /* Assets.xcassets */,
 				818BFFB41E54675E00CFEA24 /* LaunchScreen.storyboard */,
 				818BFFB71E54675E00CFEA24 /* Info.plist */,
+				818BFFBD1E54680B00CFEA24 /* GoogleService-Info.plist */,
 			);
 			path = Ultrasocial;
+			sourceTree = "<group>";
+		};
+		818BFFBF1E546B9A00CFEA24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		818BFFC01E546BA000CFEA24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		818BFFC11E546BA500CFEA24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				818BFFAD1E54675E00CFEA24 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		83B55C4945486F3F940C8EA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C56F770DCD338E3136D19D4 /* Pods-Ultrasocial.debug.xcconfig */,
+				63349CA3D9D2F705D467863A /* Pods-Ultrasocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6BF48D4EDF64A09BFA2FB29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE06CBD37ED3CC344C51A3B8 /* Pods_Ultrasocial.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 818BFFBA1E54675E00CFEA24 /* Build configuration list for PBXNativeTarget "Ultrasocial" */;
 			buildPhases = (
+				C4987B337AD872077576D218 /* [CP] Check Pods Manifest.lock */,
 				818BFFA41E54675E00CFEA24 /* Sources */,
 				818BFFA51E54675E00CFEA24 /* Frameworks */,
 				818BFFA61E54675E00CFEA24 /* Resources */,
+				F5915250330037F5C3F17BF3 /* [CP] Embed Pods Frameworks */,
+				AE1F96284D00FE425223A8DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,17 +181,66 @@
 				818BFFB61E54675E00CFEA24 /* LaunchScreen.storyboard in Resources */,
 				818BFFB31E54675E00CFEA24 /* Assets.xcassets in Resources */,
 				818BFFB11E54675E00CFEA24 /* Main.storyboard in Resources */,
+				818BFFBE1E54680B00CFEA24 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE1F96284D00FE425223A8DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ultrasocial/Pods-Ultrasocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4987B337AD872077576D218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5915250330037F5C3F17BF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ultrasocial/Pods-Ultrasocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		818BFFA41E54675E00CFEA24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818BFFAE1E54675E00CFEA24 /* ViewController.swift in Sources */,
+				818BFFAE1E54675E00CFEA24 /* SignInVC.swift in Sources */,
 				818BFFAC1E54675E00CFEA24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		818BFFBB1E54675E00CFEA24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C56F770DCD338E3136D19D4 /* Pods-Ultrasocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PEQG549YP4;
@@ -272,6 +376,7 @@
 		};
 		818BFFBC1E54675E00CFEA24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63349CA3D9D2F705D467863A /* Pods-Ultrasocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PEQG549YP4;
@@ -302,6 +407,7 @@
 				818BFFBC1E54675E00CFEA24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
